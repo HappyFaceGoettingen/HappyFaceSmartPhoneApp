@@ -1,0 +1,58 @@
+2014-08-31 12:44:14.372 HappyFace[1031:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-31 12:44:14.395 HappyFace[1031:80b] Unlimited access to network resources
+2014-08-31 12:44:14.398 HappyFace[1031:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-31 12:44:14.502 HappyFace[1031:80b] [CDVTimer][backgroundfetch] 0.036001ms
+2014-08-31 12:44:14.502 HappyFace[1031:80b] [CDVTimer][localnotification] 0.038981ms
+2014-08-31 12:44:14.502 HappyFace[1031:80b] [CDVTimer][localnotification] 0.004947ms
+2014-08-31 12:44:14.536 HappyFace[1031:80b] [CDVTimer][statusbar] 33.694029ms
+2014-08-31 12:44:14.537 HappyFace[1031:80b] [CDVTimer][TotalPluginStartup] 34.799993ms
+2014-08-31 12:44:14.611 HappyFace[1031:80b] Resetting plugins due to page load.
+2014-08-31 12:44:14.816 HappyFace[1031:80b] Finished load of: file:///Users/claw/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/4DFBE3B0-0EF7-4D78-8B76-29E19BD0057C/HappyFace.app/www/index.html#/sidemenu/categories
+2014-08-31 12:44:14.936 HappyFace[1031:80b] - CDVBackgroundFetch configure
+Terminating in response to SpringBoard's termination.
+2014-08-31 12:50:15.756 HappyFace[1785:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-31 12:50:15.761 HappyFace[1785:80b] Unlimited access to network resources
+2014-08-31 12:50:15.763 HappyFace[1785:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-31 12:50:15.774 HappyFace[1785:80b] [CDVTimer][backgroundfetch] 0.036001ms
+2014-08-31 12:50:15.775 HappyFace[1785:80b] [CDVTimer][localnotification] 0.039995ms
+2014-08-31 12:50:15.775 HappyFace[1785:80b] [CDVTimer][localnotification] 0.004947ms
+2014-08-31 12:50:15.780 HappyFace[1785:80b] [CDVTimer][statusbar] 4.797995ms
+2014-08-31 12:50:15.781 HappyFace[1785:80b] [CDVTimer][TotalPluginStartup] 6.119967ms
+2014-08-31 12:50:15.871 HappyFace[1785:80b] Resetting plugins due to page load.
+2014-08-31 12:50:15.969 HappyFace[1785:80b] Finished load of: file:///Users/claw/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ADDEA322-C4E6-4FE1-8AC6-30792D433C2B/HappyFace.app/www/index.html#/sidemenu/categories
+2014-08-31 12:50:16.104 HappyFace[1785:80b] - CDVBackgroundFetch configure
+Terminating in response to SpringBoard's termination.
+2014-08-31 13:07:08.287 HappyFace[2514:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-31 13:07:08.292 HappyFace[2514:80b] Unlimited access to network resources
+2014-08-31 13:07:08.294 HappyFace[2514:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-31 13:07:08.309 HappyFace[2514:80b] [CDVTimer][backgroundfetch] 0.036955ms
+2014-08-31 13:07:08.310 HappyFace[2514:80b] [CDVTimer][localnotification] 0.038028ms
+2014-08-31 13:07:08.310 HappyFace[2514:80b] [CDVTimer][localnotification] 0.005007ms
+2014-08-31 13:07:08.317 HappyFace[2514:80b] [CDVTimer][statusbar] 6.064057ms
+2014-08-31 13:07:08.317 HappyFace[2514:80b] [CDVTimer][TotalPluginStartup] 7.881999ms
+2014-08-31 13:07:08.405 HappyFace[2514:80b] Resetting plugins due to page load.
+2014-08-31 13:07:08.511 HappyFace[2514:80b] Finished load of: file:///Users/claw/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ADDEA322-C4E6-4FE1-8AC6-30792D433C2B/HappyFace.app/www/index.html#/sidemenu/categories
+2014-08-31 13:07:08.707 HappyFace[2514:80b] - CDVBackgroundFetch configure
+2014-08-31 13:07:32.583 HappyFace[2514:80b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-08-31 13:07:32.584 HappyFace[2514:80b] THREAD WARNING: ['InAppBrowser'] took '15.065918' ms. Plugin should use a background thread.
+2014-08-31 13:07:56.931 HappyFace[2514:80b] THREAD WARNING: ['InAppBrowser'] took '145.861084' ms. Plugin should use a background thread.
+2014-08-31 13:08:12.957 HappyFace[2514:80b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+Assertion failed: (slab->magic == SLAB_MAGIC (bucket_idx)), function slab_dealloc, file /SourceCache/QuartzCore_Sim/QuartzCore-330.0.10/util/x-alloc.c, line 567.

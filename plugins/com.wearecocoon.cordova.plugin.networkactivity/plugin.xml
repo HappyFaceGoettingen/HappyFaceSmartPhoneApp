@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.wearecocoon.cordova.plugin.networkactivity"
+    version="1.0.0">
+
+    <name>Network Activity Plugin for Cordova iOS</name>
+    <description>This plugin allows you to fire the network activity spinner in the address bar from Cordova.</description>
+    <license>Apache 2.0</license>
+    <keywords>network</keywords>	
+
+    <js-module src="www/NetworkActivity.js" name="NetworkActivity">
+        <clobbers target="window.NetworkActivity" />
+    </js-module>
+ 
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NetworkActivity">
+                <param name="ios-package" value="NetworkActivity"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/NetworkActivity.h" />
+        <source-file src="src/ios/NetworkActivity.m" />
+    </platform>
+    
+</plugin>
