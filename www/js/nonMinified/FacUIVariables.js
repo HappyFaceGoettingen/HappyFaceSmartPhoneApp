@@ -60,7 +60,7 @@ angular.module('hf.FacUIVariables', [])
 
         function beginLoading(withIonicLoading) {
             if (networkActivityCount == 0) {
-                NetworkActivity.activityStart();
+                //NetworkActivity.activityStart();
             }
             networkActivityCount++;
             if (withIonicLoading) {
@@ -77,7 +77,7 @@ angular.module('hf.FacUIVariables', [])
             }
             networkActivityCount--;
             if (networkActivityCount <= 0) {
-                NetworkActivity.activityStop();
+                //NetworkActivity.activityStop();
                 networkActivityCount = 0;
             }
         }
