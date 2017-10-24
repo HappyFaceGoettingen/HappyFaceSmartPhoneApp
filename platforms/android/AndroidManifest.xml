@@ -14,11 +14,6 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <service android:name="org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService">
-            <intent-filter>
-                <action android:name="org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService" />
-            </intent-filter>
-        </service>
         <receiver android:name="de.appplant.cordova.plugin.localnotification.Receiver" />
         <receiver android:name="de.appplant.cordova.plugin.localnotification.Restore">
             <intent-filter>
@@ -26,8 +21,13 @@
             </intent-filter>
         </receiver>
         <activity android:launchMode="singleInstance" android:name="de.appplant.cordova.plugin.localnotification.ReceiverActivity" />
+        <service android:name="org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService">
+            <intent-filter>
+                <action android:name="org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService" />
+            </intent-filter>
+        </service>
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

@@ -64,36 +64,16 @@
     <string>0.0.1</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
     <key>UIBackgroundModes</key>
     <array>
       <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
-      <string>fetch</string>
     </array>
-    <key>UISupportedInterfaceOrientations</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-    </array>
-    <key>UISupportedInterfaceOrientations~ipad</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationPortraitUpsideDown</string>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-    <key>UIViewControllerBasedStatusBarAppearance</key>
-    <true/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
+    </dict>
   </dict>
 </plist>
