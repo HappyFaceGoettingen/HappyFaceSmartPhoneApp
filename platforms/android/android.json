@@ -1,0 +1,183 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"BackgroundServicePlugin\"><param name=\"android-package\" value=\"com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:name=\"com.red_folder.phonegap.plugin.backgroundservice.BootReceiver\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"de.appplant.cordova.plugin.localnotification.Receiver\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"de.appplant.cordova.plugin.localnotification.Restore\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.localnotification.ReceiverActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService\"><intent-filter><action android:name=\"org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService\" /></intent-filter></service>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.red_folder.phonegap.plugin.backgroundservice": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "com.wearecocoon.cordova.plugin.networkactivity": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "org.transistorsoft.cordova.plugin.background.fetch": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.HappyFace"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js",
+            "id": "com.red_folder.phonegap.plugin.backgroundservice.BackgroundService",
+            "pluginId": "com.red_folder.phonegap.plugin.backgroundservice"
+        },
+        {
+            "file": "plugins/com.wearecocoon.cordova.plugin.networkactivity/www/NetworkActivity.js",
+            "id": "com.wearecocoon.cordova.plugin.networkactivity.NetworkActivity",
+            "pluginId": "com.wearecocoon.cordova.plugin.networkactivity",
+            "clobbers": [
+                "window.NetworkActivity"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
+            "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
+            "pluginId": "de.appplant.cordova.plugin.local-notification",
+            "clobbers": [
+                "plugin.notification.local"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+            "id": "org.apache.cordova.inappbrowser.inappbrowser",
+            "pluginId": "org.apache.cordova.inappbrowser",
+            "clobbers": [
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.statusbar/www/statusbar.js",
+            "id": "org.apache.cordova.statusbar.statusbar",
+            "pluginId": "org.apache.cordova.statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
+        },
+        {
+            "file": "plugins/org.transistorsoft.cordova.plugin.background.fetch/www/BackgroundFetchService.js",
+            "id": "org.transistorsoft.cordova.plugin.background.fetch.BackgroundFetchService",
+            "pluginId": "org.transistorsoft.cordova.plugin.background.fetch",
+            "clobbers": [
+                "plugins.backgroundFetch"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "id": "cordova-plugin-network-information.network",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "id": "cordova-plugin-network-information.Connection",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
+        "com.wearecocoon.cordova.plugin.networkactivity": "1.0.0",
+        "cordova-plugin-device": "1.1.7-dev",
+        "de.appplant.cordova.plugin.local-notification": "0.8.0dev",
+        "org.apache.cordova.inappbrowser": "0.3.3",
+        "org.apache.cordova.statusbar": "0.1.3",
+        "org.transistorsoft.cordova.plugin.background.fetch": "2.0.0",
+        "cordova-plugin-network-information": "1.2.1"
+    }
+}

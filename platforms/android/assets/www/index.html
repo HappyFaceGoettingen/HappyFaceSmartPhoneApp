@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="hf">
+<head>
+    <meta charset="utf-8">
+    <title>HappyFace</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no" /> <!-- no telephone number highlighting -->
+
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/CtrlCategories.js"></script>
+    <script src="js/CtrlDetails.js"></script>
+    <script src="js/CtrlMain.js"></script>
+    <script src="js/CtrlModalNewInstance.js"></script>
+    <script src="js/CtrlModalImpressum.js"></script>
+    <script src="js/CtrlModalSettings.js"></script>
+    <script src="js/CtrlModules.js"></script>
+    <script src="js/CtrlSideMenu.js"></script>
+    <script src="js/FacBackgroundRefresh.js"></script>
+    <script src="js/FacCategories.js"></script>
+    <script src="js/FacInstances.js"></script>
+    <script src="js/FacPopup.js"></script>
+    <script src="js/FacRequest.js"></script>
+    <script src="js/FacUIVariables.js"></script>
+    <script src="js/FacWebpage.js"></script>
+    <script src="js/FacWebservice.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.xml2json.js"></script>
+    <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+    <script src="cordova.js"></script>
+</head>
+<body ng-controller="CtrlMain" class="platform-android platform-cordova platform-webview">
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+</body>
+</html>

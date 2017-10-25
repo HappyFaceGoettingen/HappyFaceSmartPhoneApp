@@ -88,14 +88,14 @@
         "com.wearecocoon.cordova.plugin.networkactivity": {
             "PACKAGE_NAME": "com.ProtoFace"
         },
-        "org.apache.cordova.network-information": {
-            "PACKAGE_NAME": "com.ProtoFace"
-        },
         "org.transistorsoft.cordova.plugin.background.fetch": {
             "PACKAGE_NAME": "com.ProtoFace"
         },
         "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.ProtoFace"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.HappyFace"
         }
     },
     "dependent_plugins": {

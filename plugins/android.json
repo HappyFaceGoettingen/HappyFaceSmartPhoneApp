@@ -22,13 +22,13 @@
         "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "com.HappyFace"
         },
-        "org.apache.cordova.network-information": {
-            "PACKAGE_NAME": "com.HappyFace"
-        },
         "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "com.HappyFace"
         },
         "org.transistorsoft.cordova.plugin.background.fetch": {
+            "PACKAGE_NAME": "com.HappyFace"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.HappyFace"
         }
     },
