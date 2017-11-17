@@ -7,29 +7,23 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.red_folder.phonegap.plugin.backgroundservice": {
-            "PACKAGE_NAME": "com.HappyFace"
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.admininterface422616"
         },
-        "com.wearecocoon.cordova.plugin.networkactivity": {
-            "PACKAGE_NAME": "com.HappyFace"
+        "com.wordsbaking.cordova.tts": {
+            "PACKAGE_NAME": "com.ionicframework.admininterface422616"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.admininterface422616"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.HappyFace"
+            "PACKAGE_NAME": "com.ionicframework.admininterface422616"
         },
-        "de.appplant.cordova.plugin.local-notification": {
-            "PACKAGE_NAME": "com.HappyFace"
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.admininterface422616"
         },
-        "org.apache.cordova.inappbrowser": {
-            "PACKAGE_NAME": "com.HappyFace"
-        },
-        "org.apache.cordova.statusbar": {
-            "PACKAGE_NAME": "com.HappyFace"
-        },
-        "org.transistorsoft.cordova.plugin.background.fetch": {
-            "PACKAGE_NAME": "com.HappyFace"
-        },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.HappyFace"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.admininterface422616"
         }
     },
     "dependent_plugins": {}

@@ -1,7 +1,7 @@
 {
-  "name": "HappyFace",
-  "version": "1.0.0",
-  "description": "HappyFace: An Ionic project",
+  "name": "MadFace",
+  "version": "1.0.1",
+  "description": "MadFace: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^1.3.3",
@@ -17,15 +17,11 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "com.red_folder.phonegap.plugin.backgroundservice",
-    "com.wearecocoon.cordova.plugin.networkactivity",
     "cordova-plugin-device",
-    "cordova-plugin-network-information",
-    "de.appplant.cordova.plugin.local-notification",
-    "org.apache.cordova.device",
-    "org.apache.cordova.inappbrowser",
-    "org.apache.cordova.statusbar",
-    "org.transistorsoft.cordova.plugin.background.fetch"
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "com.ionic.keyboard"
   ],
   "cordovaPlatforms": [
     "android"

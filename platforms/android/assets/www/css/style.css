@@ -1,245 +1,123 @@
+    body {
+      background: #ffffff;
+      color: #222222;
+      font-family: Verdana,Arial,sans-serif;
+      font-size: 0.875em;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: #376797;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover {
+      color: #3d7dbd;
+    }
+    .atlas-logo {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      border-style: none;
+    }
+    .content {
+      padding: 0.35em;
+    }
+    .group {
+      background: #e4e2e5;
+      display: inline;
+      margin: 0.35em;
+      padding: 0.35em;
+    }
+    .group, .group-title, .launchpad {
+      border: 1px solid #aaaaaa;
+      /* rounded corners */
+      -moz-border-radius: 0.3em; -webkit-border-radius: 0.3em; border-radius: 0.3em;
+    }
+    .group-title {
+      text-align:center;
+      border-color: #376797;
+      background: #3d7dbd;
+      color: #ffffff;
+      font-weight: bold;
+      max-width: 10em; max-height: 3em;
+    }
+    .launchpad {
+      background: #ffffff;
+      width: 11em;
+      min-height: 8em;
+      float: left;
+      margin: 0.35em;
+      padding: 0.35em;
+    }
+    .launchpad:hover {
+      border-color: #3d7dbd;
+    }
+    .logo {
+      height: 8em;
+      border-style: none;
+      text-align:center;
+     }
+    .logo img {
+      max-width: 10em; max-height: 8em;
+      min-width: 10em; min-height: 8em;
+      border-style: none;
+     }
+    .caption {
+      min-height: 5em;
+      margin-top: 0.35em;
+      text-align:center;
+    }
+    .footer {
+      text-align: center;
+    }
+
+.ng-animate .scroll-bar {
+  visibility: visible !important;
+}
+
+.scroll-bar-fade-out{
+  opacity:1 !important
+}
+
+.diagramview img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.webview img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.plotview img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/* Very important to have a proper size of ion-list!! */
+.disable-user-behavior{
+    max-width: 2000px;
+    width: 100%;
+}
+
+.list{
+    max-width: 2000px;
+    width: 100%;
+}
+
+.ion-list{
+    max-width: 2000px;
+    width: 100%;
+}
+
 .modal{  /*modal always full screen*/
     top: 0 ;
     bottom: 0 ;
     left: 0 ;
     right: 0 ;
     width: 100% ;
-}
-
-.popup {
-    background-color: rgba(255, 255, 255, 1);
-    border: solid 1px #ddd
-}
-
-.popup-head {
-    padding: 30px 0px 15px 0px;
-    border-bottom: 1px solid #ffffff;
-    text-align: center;
-}
-
-.arrowHappy {
-    padding: 50px;
-    background-color: lightgrey;
-
-}
-
-.instance-uses-webservice{
-    color: grey;
-    font-size: 11px;
-}
-
-.instance-add-header {
-    color: lightgrey;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-.item-image-status {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.item-image-status img:first-child, .item-image-status .list-img {
-    vertical-align: middle;
-}
-
-.status-happy {
-    font-size: 45px;
-    color: limegreen;
-}
-
-.status-warning {
-    font-size: 45px;
-    color: #ffe744;
-}
-
-.status-critical {
-    font-size: 45px;
-    color: #ef4e3a;
-}
-
-.status-error {
-    font-size: 45px;
-    color: #ba2235;
-}
-
-.status-happy-sm {
-    font-size: 35px;
-    color: limegreen;
-}
-
-.status-warning-sm {
-    font-size: 35px;
-    color: #ffe744;
-}
-
-.status-critical-sm {
-    font-size: 35px;
-    color: #ef4e3a;
-}
-
-.status-error-sm {
-    font-size: 35px;
-    color: #ba2235;
-}
-
-.category-title {
-    font-size: 11px;
-    text-align: center;
-    word-break: break-all;
-}
-
-.timestamp {
-    font-size: 15px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.col-33, .col-34, .col-50 {
-    margin-top: -25px;
-    margin-bottom: -10px;
-}
-
-.cat-status-title-cont {
-    display: inline-block;
-    position: relative;
-    height: 65px;
-    width: 90px;
-    vertical-align: middle;
-}
-
-.href-button-right-cat {
-    position: absolute;
-    color: #bababa;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 23px;
-}
-
-.href-button-right-cat-cont {
-    display: inline-block;
-    float: right;
-    position: relative;
-    height: 65px;
-    padding-right: 8px;
-}
-
-.item-icon-right .href-button-right-mod {
-    color: #bababa;
-    font-size: 18px;
-}
-
-.no-modules-contained {
-    padding-top: 50px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.loading-spinner {
-    font-size: 30px;
-}
-
-.ios7-grey-bg {
-    background-color: #EFEFF4;
-}
-.lavender-bg{
-    background-color: #FCFCFF !important;
-}
-
-.settings-explanation {
-    color: #6D6D72;
-    font-size: 13px;
-    line-height: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.app-logo{
-    text-align: center;
-    padding: 20px 0;
-}
-
-.credits{
-    text-align: center;
-}
-
-.uni-logo{
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: -10px;
-}
-
-.item-button {
-    color: #4a87ee;
-}
-
-.item-real-button {
-    color: #4a87ee;
-    font-size: 16px;
-    margin-left: -15px;
-    border-color: transparent;
-    background: none;
-    box-shadow: none;
-}
-
-.sub-table {
-    background-color: #EFEFF4;
-}
-
-.sub-table-title {
-    text-align: center;
-    font-weight: bold;
-}
-
-.sub-table-time {
-    text-align: center;
-}
-
-.overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.col-15 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 15%;
-    -moz-box-flex: 0;
-    -moz-flex: 0 0 15%;
-    -ms-flex: 0 0 15%;
-    flex: 0 0 15%;
-    max-width: 15%;
-}
-
-.grey-overlay {
-    background-color: #FCFCFF;
-    filter:alpha(opacity=80);
-    opacity: 0.8;
-    -moz-opacity:0.80;
-    z-index: 20;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-.outdated{
-    text-align: center;
-    line-height: 350px;
-    color: #2c2c2c;
-}
-.no-active-instance{
-    text-align: center;
-    padding-top: 140px;
-    color: #2c2c2c;
-}
-
-.cancel-button{
-    font-size: 10px;
-    text-align: right;
-    line-height: 10px;
 }

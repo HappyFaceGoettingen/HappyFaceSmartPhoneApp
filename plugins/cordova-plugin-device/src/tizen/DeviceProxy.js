@@ -20,9 +20,10 @@
 */
 
 var tizen = require('cordova/platform');
+var cordova = require('cordova');
 
 module.exports = {
-    getDeviceInfo: function (success, error) {
+    getDeviceInfo: function(success, error) {
         setTimeout(function () {
             success({
                 cordova: tizen.cordovaVersion,
@@ -35,4 +36,4 @@ module.exports = {
     }
 };
 
-require('cordova/tizen/commandProxy').add('Device', module.exports);
+require("cordova/tizen/commandProxy").add("Device", module.exports);

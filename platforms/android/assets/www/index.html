@@ -1,39 +1,53 @@
 <!DOCTYPE html>
-<html ng-app="hf">
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <title>HappyFace</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta name="format-detection" content="telephone=no" /> <!-- no telephone number highlighting -->
+    <title></title>
 
-    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/CtrlCategories.js"></script>
-    <script src="js/CtrlDetails.js"></script>
-    <script src="js/CtrlMain.js"></script>
-    <script src="js/CtrlModalNewInstance.js"></script>
-    <script src="js/CtrlModalImpressum.js"></script>
-    <script src="js/CtrlModalSettings.js"></script>
-    <script src="js/CtrlModules.js"></script>
-    <script src="js/CtrlSideMenu.js"></script>
-    <script src="js/FacBackgroundRefresh.js"></script>
-    <script src="js/FacCategories.js"></script>
-    <script src="js/FacInstances.js"></script>
-    <script src="js/FacPopup.js"></script>
-    <script src="js/FacRequest.js"></script>
-    <script src="js/FacUIVariables.js"></script>
-    <script src="js/FacWebpage.js"></script>
-    <script src="js/FacWebservice.js"></script>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
 
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/jquery.xml2json.js"></script>
-    <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-</head>
-<body ng-controller="CtrlMain" class="platform-android platform-cordova platform-webview">
-    <ion-nav-view animation="slide-left-right"></ion-nav-view>
-</body>
+
+    <!-- lib -->
+    <script src="lib/jquery.js"></script>
+
+    <!-- data files -->
+    <script src="js/Logger.js"></script>
+    <script src="js/ConfigReader.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/CtrlModalMetaMetaConfiguration.js"></script>
+    <script src="js/FacMetaSiteReloader.js"></script>
+    <script src="js/FacMetaMetaSites.js"></script>
+    <script src="js/FacMobileConfig.js"></script>
+    <script src="js/FacJsonContents.js"></script>
+  </head>
+
+  <body ng-app="madface" class="platform-android platform-cordova platform-webview">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
 </html>

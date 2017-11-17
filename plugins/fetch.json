@@ -1,79 +1,49 @@
 {
-    "com.red_folder.phonegap.plugin.backgroundservice": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Red-Folder/bgs-core.git",
-            "subdir": "."
-        }
-    },
-    "com.wearecocoon.cordova.plugin.networkactivity": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/steve228uk/network-activity.git",
-            "subdir": "."
-        }
-    },
-    "de.appplant.cordova.plugin.local-notification": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/katzer/cordova-plugin-local-notifications.git",
-            "subdir": "."
-        }
-    },
     "cordova-plugin-device": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/apache/cordova-plugin-device",
-            "subdir": "."
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "org.apache.cordova.device": {
-        "source": {
-            "type": "local",
-            "path": "/var/folders/46/zb6wqthx7gb9s5wp17km_xjr0000gn/T/org.apache.cordova.device/package"
-        }
-    },
-    "org.apache.cordova.inappbrowser": {
-        "source": {
-            "type": "local",
-            "path": "/var/folders/46/zb6wqthx7gb9s5wp17km_xjr0000gn/T/org.apache.cordova.inappbrowser/package"
-        }
-    },
-    "cordova-plugin-inappbrowser": {
-        "source": {
             "type": "registry",
-            "id": "cordova-plugin-inappbrowser"
+            "id": "cordova-plugin-device"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "org.apache.cordova.statusbar": {
-        "source": {
-            "type": "local",
-            "path": "/var/folders/46/zb6wqthx7gb9s5wp17km_xjr0000gn/T/org.apache.cordova.statusbar/package"
-        }
-    },
-    "cordova-plugin-statusbar": {
+    "cordova-plugin-console": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-statusbar"
+            "id": "cordova-plugin-console"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "org.transistorsoft.cordova.plugin.background.fetch": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/christocracy/cordova-plugin-background-fetch.git",
-            "subdir": "."
-        }
-    },
-    "cordova-plugin-network-information": {
+    "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-network-information@~1.2.0"
+            "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.ionic.keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "com.ionic.keyboard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.wordsbaking.cordova.tts": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vilic/cordova-plugin-tts",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}
